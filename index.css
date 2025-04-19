@@ -1,0 +1,57 @@
+p {
+    text-align: center;
+    font-family: funkin;
+    font-size: larger;
+    color: white;
+}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(45, 50, 56);
+}
+
+.credits {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 750px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(45, 50, 56);
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(56, 59, 63);
+    font-size: larger;
+    width: 400px;
+    height: 70px;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.body {
+    background-color: rgb(33,40,48);
+}
+
+.centerX {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: funkin;
+}
+
+@font-face {
+    font-family: funkin;
+    src: url(funkin.ttf);
+}

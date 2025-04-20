@@ -1,8 +1,9 @@
 p {
     text-align: center;
     font-family: funkin;
-    font-size: larger;
+    font-size: large;
     color: white;
+    text-shadow: 0px 2px 5px black;
 }
 
 details {
@@ -10,31 +11,51 @@ details {
     margin-right: auto;
     text-align: center;
     font-family: funkin;
-    font-size: larger;
+    font-size: large;
     color: white;
     padding: 5px;
     border-radius: 10px;
     width: 900px;
     background-color: rgb(45, 50, 56);
+
+    interpolate-size: allow-keywords;
+    &::details-content {
+        transition:
+            block-size 1s,
+            content-visibility 1s allow-discrete;
+        overflow: hidden;
+        block-size: 0;
+    }
+
+    &[open]::details-content {
+        block-size: auto;
+    }
 }
 
 a {
     text-decoration: none;
+    color: aqua;
     font-family: funkin;
+}
+
+img {
+    border-radius: 10px;
+}
+
+body {
+    background-color: rgb(33,40,48);
 }
 
 .main {
     margin-left: auto;
     margin-right: auto;
     width: 750px;
-    height: 500px;
     border-radius: 10px;
     background-color: rgb(45, 50, 56);
 }
 
 .credits {
     text-align: center;
-    height: 650px;
     border-radius: 10px;
     padding: 10px;
     background-color: rgb(45, 50, 56);
@@ -45,20 +66,20 @@ a {
     margin-right: auto;
     background-color: rgb(56, 59, 63);
     font-size: larger;
-    width: 400px;
-    height: 70px;
-    padding: 1px;
+    width: 300px;
+    height: 55x;
+    padding: 5px;
     border-radius: 10px;
-}
-
-.body {
-    background-color: rgb(33,40,48);
 }
 
 .centerX {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.xx-small {
+    font-size: xx-small;
 }
 
 .dave {
@@ -76,6 +97,7 @@ a {
 
 .cne {
     color: rgb(168, 76, 168);
+    border-radius: 10px;
 }
 
 @font-face {

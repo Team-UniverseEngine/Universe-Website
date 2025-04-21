@@ -19,6 +19,7 @@
 <h6>
     <a href="https://discord.gg/RaHmP5fgyA/">Universe Engine Discord</a>
     <br>
+    <a href="https://universe-engine.netlify.app/"> Universe Engine Website</a>
     Website hosted by <a href="https://www.netlify.com/">netlify.com</a>
     <br>
     Website designed by <a href="https://daveberry.netlify.app">Daveberry</a> <i>(mainly did everything)</i> and <a href="https://linktr.ee/videobot">Videobot</a>

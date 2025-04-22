@@ -15,7 +15,7 @@ details {
     color: white;
     padding: 5px;
     border-radius: 10px;
-    width: 900px;
+    width: 600px;
     background-color: rgb(45, 50, 56);
 
     interpolate-size: allow-keywords;
@@ -44,6 +44,10 @@ img {
 
 body {
     background-color: rgb(33, 40, 48);
+}
+
+creditText {
+    color: white;
 }
 
 .main {
@@ -91,11 +95,15 @@ body {
     font-size: large;
 }
 
-.active {
+.nav-active {
     background-color: rgb(56, 59, 63);
     padding: 10px;
     border-radius: 5px;
     color: white;
+}
+
+.nav-inactive {
+    padding: 10px;
 }
 
 /* FUNNY COLOR LOL */

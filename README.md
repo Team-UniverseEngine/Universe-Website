@@ -8,13 +8,19 @@
 
 <h1></h1>
 
-<p color="aqua">
+<p>
     Go ahead and make pull requests to make the website a bit better!
     <br>
     We always love a little help from people!
     <br>
     :3
 </p>
+
+<h1>
+    <a href="https://universe-engine.netlify.app/">
+        UNIVERSE ENGINE WEBSITE
+    </a>
+</h1>
 
 <h6>
     <a href="https://discord.gg/RaHmP5fgyA/">Universe Engine Discord</a>

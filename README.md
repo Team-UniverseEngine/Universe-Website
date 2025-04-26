@@ -6,7 +6,7 @@
 <div align="center">
 <img src="images/Universe Engine.png" width="300">
 
-<h1></h1>
+<br>
 
 <p>
     Go ahead and make pull requests to make the website a bit better!

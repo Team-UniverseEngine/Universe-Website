@@ -1,2 +1,445 @@
-hey fuck you :3 <br>
-go away for now, this page under construction
+<head>
+    <meta charset="UTF-8">
+    <meta name="Universe Engine" content="width=device-width, initial-scale=1.0">
+    <title>Universe Engine</title>
+    <link rel="icon" href="images/icon64.png" type="image/x-icon">
+</head>
+
+<style>
+    body {
+        background-color: rgb(50, 50, 50);
+        cursor: url("images/cursor/cursor-default.png"), auto;
+    }
+
+    p, a, h1, h2, h3, h4, h5, h6, details, summary {
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    a {
+        color: aqua;
+        text-decoration: none;
+    }
+    
+    summary, a {
+        cursor: url("images/cursor/cursor-pointer.png"), auto;
+    }
+
+    .box {
+        margin-left: auto;
+        margin-right: auto;
+
+        word-wrap: break-word;
+        width: 600px;
+
+        background-color: rgb(20, 20, 20);
+        border-radius: 10px;
+        padding: 10px;
+
+        outline: auto;
+        outline-style: solid;
+        outline-color: rgb(255, 255, 255);
+
+        /* scrollable
+        height: 500px;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: auto;
+        scroll-margin-top: 10px;
+        */
+    }
+
+    .demo {
+        background-color: rgb(40, 40, 40);
+        font-family: monospace;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    #topbar {
+        background-color: blueviolet;
+        position: sticky;
+        overflow: hidden;
+        
+        top: 10px;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        margin-left: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 20px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 20px;
+    } 
+    
+    @font-face {
+        font-family: funkin;
+        src: url("other/funkin.ttf");
+    }   
+</style>
+
+<body>
+    <div id="topbar">
+        <p style="text-align: center;">
+            <a style="color: white; font-size: xx-large;" href="index.html">
+                <img src="images/icon64.png" width="32">
+                Universe Engine - Lua Functions
+            </a>
+        </p>
+    </div>
+
+    <p style="text-align: center;">
+        All
+        <a href="https://github.com/ShadowMario/FNF-PsychEngine">Psych Engine</a>
+        lua function can be found
+        <a href="https://shadowmario.github.io/psychengine.lua/">Here</a>.
+    </p>
+
+    <div class="box">
+        <h1>FlxBackDrop</h1>
+        <div class="func">
+            <h2 style="margin-left: 10px;">
+                addGridBG
+            </h2>
+            <h3 style="margin-left: 20px;">
+                addGridBG(tag:String, cellWidth:Int, cellHeight:Int, width:Int, height:Int:, xVel:Int, yVel:Int)
+            </h3>
+            <p style="margin-left: 30px;">
+                Creates a Grid BG with a specific Width, Height And Speed and store it as the name input in "tag".
+    
+                <p style="margin-left: 40px;">
+                    • tag - Grid's name tag to save <br>
+                    • cellWidth - Width of a grid cell <br>
+                    • cellHeight - Height of a grid cell <br>
+                    • width - Grid's width size <br>
+                    • height - Grid's height size <br>
+                    • xVel - Grid's speed on the X-axis <br>
+                    • yVel - Grid's speed on the Y-axis
+                </p>
+            </p>
+
+            <details style="margin-left: 20px;">
+                <summary>Demonstration</summary>
+                <p style="margin-left: 30px;" class="demo">
+                    addGridBG("mytag", 80, 80, 160, 160, 20, 20)
+                </p>
+            </details>
+        </div>
+        <br> <hr>
+        
+        <div class="func">
+            <h2 style="margin-left: 10px;">
+                addBackdrop
+            </h2>
+            <h3 style="margin-left: 20px;">
+                addBackdrop(tag:String, image:String, xVel:Int, yVel:Int)
+            </h3>
+            <p style="margin-left: 30px;">
+                Creates a Grid BG with a specific Width, Height And Speed and store it as the name input in "tag".
+    
+                <p style="margin-left: 40px;">
+                    • tag - Backdrops's name tag to save <br>
+                    • image - Backdrop's Image Path images/ <br>
+                    • xVel - Backdrops's speed on the X-axis <br>
+                    • yVel - Backdrop's speed on the Y-axis
+                </p>
+            </p>
+
+            <details style="margin-left: 20px;">
+                <summary>Demonstration</summary>
+                <p style="margin-left: 30px;" class="demo">
+                    addBackdrop("mytag", 'menuBG', 100, 100)
+                </p>
+            </details>
+        </div>
+        <br> <hr>
+        
+        <div class="func">
+            <h2 style="margin-left: 10px;">
+                removeBackdrop
+            </h2>
+            <h3 style="margin-left: 20px;">
+                removeBackdrop(tag:String)
+            </h3>
+            <p style="margin-left: 30px;">
+                Removes the existing backdrop with the name specified in "tag."
+    
+                <p style="margin-left: 40px;">
+                    • tag - Backdrops's name tag to save <br>
+                    • image - Backdrop's Image Path images/ <br>
+                    • xVel - Backdrops's speed on the X-axis <br>
+                    • yVel - Backdrop's speed on the Y-axis
+                </p>
+            </p>
+
+            <details style="margin-left: 20px;">
+                <summary>Demonstration</summary>
+                <p style="margin-left: 30px;" class="demo">
+                    addBackdrop("mytag", 'menuBG', 100, 100)
+                </p>
+            </details>
+        </div>
+    </div>
+    <br>
+
+    <div class="box">
+        <h1>Window Scale / Position</h1>
+        <div class="func">
+            <h2 style="margin-left: 10px;">
+                WindowSize
+            </h2>
+            <h3 style="margin-left: 20px;">
+                windowSize(sizeX:Int, sizeY:Int, duration:Float, ease:String)
+            </h3>
+            <p style="margin-left: 30px;">
+                Changes Game Window's Size With specific Width, Height ,Duration and Ease.
+    
+                <p style="margin-left: 40px;">
+                    • x - Game Window's X Size (Width) <br>
+                    • y - Game Window's Y Size (Height) <br>
+                    • duration - Speed Of How Fast is Tween is gonna be <br>
+                    • ease - Tween Ease
+                </p>
+            </p>
+
+            <details style="margin-left: 20px;">
+                <summary>Demonstration</summary>
+                <p style="margin-left: 30px;" class="demo">
+                    windowSize(1280, 720, 1, 'linear')
+                </p>
+            </details>
+        </div>
+        <br> <hr>
+
+        <div class="func">
+            <h2 style="margin-left: 10px;">
+                windowSizeX
+            </h2>
+            <h3 style="margin-left: 20px;">
+                windowSizeX(sizeX:Int, duration:Float, ease:String)
+            </h3>
+            <p style="margin-left: 30px;">
+                Similar to windowSize but it only changes the width of the window.
+    
+                <p style="margin-left: 40px;">
+                    • x - Game Window's X Size (Width) <br>
+                    • duration - Speed Of How Fast is Tween is gonna be <br>
+                    • ease - Tween Ease
+                </p>
+            </p>
+
+            <details style="margin-left: 20px;">
+                <summary>Demonstration</summary>
+                <p style="margin-left: 30px;" class="demo">
+                    windowSizeX(1280, 1, "linear")
+                </p>
+            </details>
+        </div>
+        <br> <hr>
+
+        <div class="func">
+            <h2 style="margin-left: 10px;">
+                windowSizeY
+            </h2>
+            <h3 style="margin-left: 20px;">
+                windowSizeY(sizeY:Int, duration:Float, ease:String)
+            </h3>
+            <p style="margin-left: 30px;">
+                Similar to windowSize but it only changes the height of the window.
+    
+                <p style="margin-left: 40px;">
+                    • y - Game Window's Y Size (Height) <br>
+                    • duration - Speed Of How Fast is Tween is gonna be <br>
+                    • ease - Tween Ease
+                </p>
+            </p>
+
+            <details style="margin-left: 20px;">
+                <summary>Demonstration</summary>
+                <p style="margin-left: 30px;" class="demo">
+                    windowSizeY(720, 1, "linear")
+                </p>
+            </details>
+        </div>
+        <br> <hr>
+
+        <!-- <h1>Window Pos</h1> -->
+        <div class="func">
+            <h2 style="margin-left: 10px;">
+                windowPos
+            </h2>
+            <h3 style="margin-left: 20px;">
+                windowPos(x:Int, y:Int, duration:Float, ease:String)
+            </h3>
+            <p style="margin-left: 30px;">
+                Changes Game Window's Position With specific X, Y ,Duration and Ease.
+    
+                <p style="margin-left: 40px;">
+                    • x - Game Window's X Pos <br>
+                    • y - Game Window's Y Pos <br>
+                    • duration - Speed Of How Fast is Tween is gonna be <br>
+                    • ease - Tween Ease
+                </p>
+            </p>
+
+            <details style="margin-left: 20px;">
+                <summary>Demonstration</summary>
+                <p style="margin-left: 30px;" class="demo">
+                    windowPos(0, 0, 1, 'linear')
+                </p>
+            </details>
+        </div>
+        <br> <hr>
+
+        <div class="func">
+            <h2 style="margin-left: 10px;">
+                windowPosX
+            </h2>
+            <h3 style="margin-left: 20px;">
+                windowPosX(x:Int, duration:Float, ease:String)
+            </h3>
+            <p style="margin-left: 30px;">
+                Similar to windowPos but it only changes the X position of the window
+    
+                <p style="margin-left: 40px;">
+                    • x - Game Window's X Pos <br>
+                    • duration - Speed Of How Fast is Tween is gonna be <br>
+                    • ease - Tween Ease
+                </p>
+            </p>
+
+            <details style="margin-left: 20px;">
+                <summary>Demonstration</summary>
+                <p style="margin-left: 30px;" class="demo">
+                    windowPosX(0, 1, 'linear')
+                </p>
+            </details>
+        </div>
+        <br> <hr>
+
+        <div class="func">
+            <h2 style="margin-left: 10px;">
+                windowPosY
+            </h2>
+            <h3 style="margin-left: 20px;">
+                windowPosY(y:Int, duration:Float, ease:String)
+            </h3>
+            <p style="margin-left: 30px;">
+                Similar to windowPos but it only changes the X position of the window
+    
+                <p style="margin-left: 40px;">
+                    • y - Game Window's Y Pos <br>
+                    • duration - Speed Of How Fast is Tween is gonna be <br>
+                    • ease - Tween Ease
+                </p>
+            </p>
+
+            <details style="margin-left: 20px;">
+                <summary>Demonstration</summary>
+                <p style="margin-left: 30px;" class="demo">
+                    windowPosY(0, 1, 'linear')
+                </p>
+            </details>
+        </div>
+    </div>
+    <br>
+
+    <div class="box">
+        <h1>Dangerous</h1>
+        <div class="func">
+            <h2 style="margin-left: 10px;">
+                showMessageBox
+            </h2>
+            <h3 style="margin-left: 20px;">
+                showMessageBox(message:String, caption:String, icon:MessageBoxIcon)
+            </h3>
+            <p style="margin-left: 30px;">
+                Pops out a message box when trigged.
+    
+                <p style="margin-left: 40px;">
+                    • message - Message what you want to put. <br>
+                    • caption - (I don't know what this does lmao) <br>
+                    • icon - What kind of icon you want.
+                </p>
+            </p>
+    
+            <details style="margin-left: 20px;">
+                <summary>Demonstration</summary>
+                <p style="margin-left: 30px;" class="demo">
+                    showMessageBox("daveberry is cool", "i dunno what this does yet", "images/credits/dave.png")
+                </p>
+            </details>
+        </div>
+
+        <div class="func">
+            <h2 style="margin-left: 10px;">
+                hideTaskbar
+            </h2>
+            <h3 style="margin-left: 20px;">
+                hideTaskbar(hide:Bool)
+            </h3>
+            <p style="margin-left: 30px;">
+                Hides the taskbar, pretty self-explanatory.
+    
+                <p style="margin-left: 40px;">
+                    • hide - Hides the taskbar whenever trigged
+                </p>
+            </p>
+    
+            <details style="margin-left: 20px;">
+                <summary>Demonstration</summary>
+                <p style="margin-left: 30px;" class="demo">
+                    hideTaskbar(true)
+                </p>
+            </details>
+        </div>
+    </div>
+    <br>
+
+    <p style="font-size: xx-small; text-align: center;">
+        Website Hosted by <a href="https://www.netlify.com" target="_blank"> Netlify.com </a> <br>
+        Website designed by <a href="https://daveberry.netlify.app" target="_blank"> Daveberry </a>
+        <!-- hi i mainly did everything -dave -->
+    </p>
+</body>
+
+<!--
+TEMPLATE BECAUSE YES
+
+<div class="box">
+    <h1>FunctionCatagory</h1>
+    <div class="func">
+        <h2 style="margin-left: 10px;">
+            Function
+        </h2>
+        <h3 style="margin-left: 20px;">
+            ShowFunction
+        </h3>
+        <p style="margin-left: 30px;">
+            Description
+
+            <p style="margin-left: 40px;">
+                • Values
+            </p>
+        </p>
+
+        <details style="margin-left: 20px;">
+            <summary>Demonstration</summary>
+            <p style="margin-left: 30px;" class="demo">
+                FunctionExample
+            </p>
+        </details>
+    </div>
+</div>
+
+-->

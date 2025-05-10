@@ -1,0 +1,134 @@
+p {
+    text-align: center;
+    font-family: funkin;
+    font-size: large;
+    color: white;
+    text-shadow: 0px 2px 5px black;
+}
+
+details {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: funkin;
+    font-size: large;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 600px;
+    background-color: rgb(45, 50, 56);
+
+    interpolate-size: allow-keywords;
+    &::details-content {
+        transition:
+            block-size 1s,
+            content-visibility 1s allow-discrete;
+        overflow: hidden;
+        block-size: 0;
+    }
+
+    &[open]::details-content {
+        block-size: auto;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+    font-family: funkin;
+}
+
+img {
+    border-radius: 10px;
+}
+
+body {
+    background-color: rgb(33, 40, 48);
+}
+
+creditText {
+    color: white;
+}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    border-radius: 10px;
+    background-color: rgb(45, 50, 56);
+}
+
+.credits {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(45, 50, 56);
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(56, 59, 63);
+    font-size: larger;
+    width: 300px;
+    height: 55px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.centerX {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xx-small {
+    font-size: xx-small;
+}
+
+.BGbuttons {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(45, 50, 56);
+    word-spacing: 10px;
+    font-size: large;
+}
+
+.nav-active {
+    background-color: rgb(56, 59, 63);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.nav-inactive {
+    padding: 10px;
+}
+
+/* FUNNY COLOR LOL */
+.dave {
+    color: rgb(0, 139, 255);
+}
+
+.videobot {
+    color: rgb(20, 255, 255);
+}
+
+.baran {
+    color: rgb(180, 144, 115);
+}
+
+.char {
+    color: rgb(255, 136, 0);
+}
+
+.cne {
+    color: rgb(168, 76, 168);
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: funkin;
+    src: url(funkin.ttf);
+}

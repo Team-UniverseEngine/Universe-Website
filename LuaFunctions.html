@@ -3,99 +3,14 @@
     <meta name="Universe Engine" content="width=device-width, initial-scale=1.0">
     <title>Universe Engine</title>
     <link rel="icon" href="images/icon64.png" type="image/x-icon">
+    <link rel="stylesheet" href="other/index.css">
 </head>
 
-<style>
-    body {
-        background-color: rgb(50, 50, 50);
-        cursor: url("images/cursor/cursor-default.png"), auto;
-    }
-
-    p, a, h1, h2, h3, h4, h5, h6, details, summary {
-        color: white;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    a {
-        color: aqua;
-        text-decoration: none;
-    }
-    
-    summary, a {
-        cursor: url("images/cursor/cursor-pointer.png"), auto;
-    }
-
-    .box {
-        margin-left: auto;
-        margin-right: auto;
-
-        word-wrap: break-word;
-        width: 600px;
-
-        background-color: rgb(20, 20, 20);
-        border-radius: 10px;
-        padding: 10px;
-
-        outline: auto;
-        outline-style: solid;
-        outline-color: rgb(255, 255, 255);
-
-        /* scrollable
-        height: 500px;
-
-        overflow-y: scroll;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-        scrollbar-width: auto;
-        scroll-margin-top: 10px;
-        */
-    }
-
-    .demo {
-        background-color: rgb(40, 40, 40);
-        font-family: monospace;
-        border-radius: 5px;
-        padding: 5px;
-    }
-
-    #topbar {
-        background-color: blueviolet;
-        position: sticky;
-        overflow: hidden;
-        
-        top: 10px;
-        border-radius: 10px;
-    }
-
-    ::-webkit-scrollbar {
-        width: 10px;
-        margin-left: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey;
-        border-radius: 20px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: gray;
-        border-radius: 20px;
-    } 
-    
-    @font-face {
-        font-family: funkin;
-        src: url("other/funkin.ttf");
-    }   
-</style>
-
 <body>
-    <div id="topbar">
-        <p style="text-align: center;">
-            <a style="color: white; font-size: xx-large;" href="index.html">
-                <img src="images/icon64.png" width="32">
-                Universe Engine - Lua Functions
-            </a>
-        </p>
+    <div class="topbar">
+        <a href="index.html" class="nav-inactive">Home</a>
+        <a href="wiki.html" class="nav-inactive">Wiki</a>
+        <a href="LuaFunctions.html" class="nav-active">Lua-Functions</a>
     </div>
 
     <p style="text-align: center;">

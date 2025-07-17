@@ -3,7 +3,7 @@ body {
     cursor: url("/images/cursor/cursor-default.png"), auto;
 }
 
-p, a, h1, h2, h3, h4, h5, h6, details, summary {
+p, a, h1, h2, h3, h4, h5, h6, details, summary, ul, li {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
